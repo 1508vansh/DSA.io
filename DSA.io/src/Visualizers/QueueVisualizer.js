@@ -68,7 +68,7 @@ export default function QueueVisualizer(){
          <div className={`h-screen ${isDark?'bg-gray-900':''} sm:w-[80%] w-[90%] pt-6 mx-auto text-center justify-center`}>
         <div className={`p-5 rounded-lg sm:w-[40%] w-full shadow-lg mx-auto text-center justify-center ${bgColor}`}>
                 <h1 className={`${textColor} sm:text-3xl text-2xl font-bold mb-4`}>Queue Visualizer</h1>
-            <div className="w-[100%] flex flex-col mt-4 items-center">
+            <div className="w-full flex flex-col mt-4 items-center">
             <div className="w-[80%] flex justify-center mb-4">
                     <input
                         id="inputNumber"

@@ -67,7 +67,7 @@ export default function RunningText() {
         
         {/* Stable positioning background */}
         <div className="absolute inset-0 -z-10 opacity-20 blur-lg 
-          bg-gradient-to-r from-cyan-400/30 to-blue-500/30
+          bg-linear-to-r from-cyan-400/30 to-blue-500/30
           transition-opacity duration-300" />
       </div>
     </div>

@@ -62,7 +62,7 @@ export default function AlgorithmCards() {
             {/* Enhanced Image Container */}
             <div className="w-full aspect-video mb-6 rounded-xl overflow-hidden border-2 border-gray-100 
               dark:border-gray-700 shadow-sm relative bg-gray-100 dark:bg-gray-700">
-              <div className={`absolute inset-0 bg-gradient-to-t ${algo.bgColor.replace('bg', 'from')}/30 to-transparent z-10`} />
+              <div className={`absolute inset-0 bg-linear-to-t ${algo.bgColor.replace('bg', 'from')}/30 to-transparent z-10`} />
               <img
                 src={algo.image}
                 alt={algo.name}

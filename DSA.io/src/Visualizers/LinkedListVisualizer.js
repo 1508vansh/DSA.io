@@ -59,7 +59,7 @@ export default function QueueVisualizer(){
          <div className={`h-screen ${isDark?'bg-gray-900':''} sm:w-[80%] w-full pt-6 mx-auto text-center justify-center`}>
         <div className={`p-5 rounded-lg sm:w-[60%] w-[95%] shadow-lg mx-auto text-center justify-center ${bgColor}`}>
                 <h1 className={`${textColor} text-3xl font-bold mb-4`}>LinkedList Visualizer</h1>
-            <div className="w-[100%] flex flex-col mt-4 items-center">
+            <div className="w-full flex flex-col mt-4 items-center">
             <div className="w-[80%] flex justify-center mb-4">
                     <input
                         id="inputNumber"
@@ -86,7 +86,7 @@ export default function QueueVisualizer(){
             </div>
             </div>
             </div>
-            <div className="mt-4 sm:w-[100%] w-[95%] h-[40%] border-2 gap-1 border-gray-400 rounded-xl mx-auto py-3 px-3 flex flex-col items-center">
+            <div className="mt-4 sm:w-full w-[95%] h-[40%] border-2 gap-1 border-gray-400 rounded-xl mx-auto py-3 px-3 flex flex-col items-center">
                     <div className="font-bold flex justify-center items-center">{instruction}</div>
                     {/* <div className={`flex justify-center items-center w-full h-20`}>{instruction}</div> */}
                     <div className="flex gap-0.5 py-0.5 justify-center items-center w-[95%] h-[30%]">
@@ -97,7 +97,7 @@ export default function QueueVisualizer(){
                                transition-colors duration-500`
                             }>
                                 <div className="font-semibold">{value}</div>
-                                <div className="border-1 border-black sm:h-15 h-9"></div>
+                                <div className="border-2 border-black sm:h-15 h-9"></div>
                                 <div className="font-semibold">Next</div>
                             </div>
                             <div className={`text-green-600 text-2xl`}><FaArrowRightLong/></div>
