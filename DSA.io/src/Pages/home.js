@@ -1,9 +1,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBrain, FaTrophy, FaArrowRight, FaRocket, FaChartLine, FaBookOpen } from "react-icons/fa";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import Footer from '../Components/Footer';
 import { useSelector } from "react-redux";
+import { Link } from "react-router";
 
 export default function Main() {
   const navigate = useNavigate();
@@ -108,7 +109,7 @@ export default function Main() {
         {/* Interactive Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {cards.map((card, index) => (
-            <motion.div
+            <motion.div onClick={()=>navigate(`${card.link}`)}
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
