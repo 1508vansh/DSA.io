@@ -90,7 +90,7 @@ export default function Main() {
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Welcome to{" "}
-              <span className="bg-gradient-to-r from-blue-600 animate-pulse to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-600 animate-pulse to-purple-600 bg-clip-text text-transparent">
                 DSA.io
               </span>
             </h1>
@@ -117,11 +117,11 @@ export default function Main() {
               whileTap={{ scale: 0.98 }}
               className="relative group"
             >
-              <div className={`bg-gradient-to-r ${card.color} rounded-2xl p-8 h-64 shadow-xl relative overflow-hidden transition-all hover:shadow-2xl`}>
+              <div className={`bg-linear-to-r ${card.color} rounded-2xl p-8 h-64 shadow-xl relative overflow-hidden transition-all hover:shadow-2xl`}>
                 {/* Animated Border */}
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent"
+                    className="absolute inset-0 bg-linear-to-r from-white/20 to-transparent"
                     initial={{ x: "-100%" }}
                     animate={{ x: "100%" }}
                     transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
@@ -160,7 +160,7 @@ export default function Main() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => navigate(card.link)}
-                        className="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all"
+                        className="flex items-center space-x-2 bg-linear-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all"
                       >
                         <span className="text-lg font-semibold">Get Started</span>
                         <motion.span
@@ -194,7 +194,7 @@ export default function Main() {
               className="card p-6 rounded-2xl shadow-lg relative overflow-hidden"
               style={{ backgroundColor: themeStyles.cardBg }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-r from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="h-32 flex flex-col justify-center relative">
                 <motion.div
                   className="text-3xl mb-4"
@@ -277,7 +277,7 @@ export default function Main() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 whileHover={{ y: -10 }}
-                className={`relative group h-64 bg-gradient-to-r ${card.gradient} p-6 rounded-2xl shadow-lg flex flex-col justify-between`}
+                className={`relative group h-64 bg-linear-to-r ${card.gradient} p-6 rounded-2xl shadow-lg flex flex-col justify-between`}
               >
                 <span className="text-5xl">{card.icon}</span>
                 <div>

@@ -47,7 +47,7 @@ const RaceEntryUI = () => {
         {[...Array(8)].map((_, lane) => (
           <motion.div
             key={lane}
-            className="absolute h-1 bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"
+            className="absolute h-1 bg-linear-to-r from-transparent via-cyan-400/40 to-transparent"
             style={{
               top: `${25 + lane * 8}%`,
               width: '120%',
@@ -73,7 +73,7 @@ const RaceEntryUI = () => {
         ].map((car, index) => (
           <motion.div
             key={index}
-            className={`absolute w-16 h-8 bg-gradient-to-r ${car.color} rounded-lg shadow-lg`}
+            className={`absolute w-16 h-8 bg-linear-to-r ${car.color} rounded-lg shadow-lg`}
             style={{
               top: `${28 + index * 8}%`,
             }}
@@ -151,11 +151,11 @@ const RaceEntryUI = () => {
   return (
     <div 
       ref={containerRef}
-      className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex flex-col items-center justify-center p-4 overflow-hidden relative"
+      className="min-h-screen bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 flex flex-col items-center justify-center p-4 overflow-hidden relative"
     >
       {/* Dynamic background with parallax */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-cyan-900/10 via-purple-900/10 to-gray-900"
+        className="absolute inset-0 bg-linear-to-br from-cyan-900/10 via-purple-900/10 to-gray-900"
         animate={{
           background: [
             'radial-gradient(circle at 30% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 50%)',
@@ -196,7 +196,7 @@ const RaceEntryUI = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-br from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               ALGORITHM
             </span>
             <br />
@@ -259,7 +259,7 @@ const RaceEntryUI = () => {
           
           {/* Button shine effect */}
           <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent skew-x-12"
+            className="absolute inset-0 bg-linear-to-br from-transparent via-cyan-400/20 to-transparent skew-x-12"
             initial={{ x: '-100%' }}
             whileHover={{ x: '200%' }}
             transition={{ duration: 0.8 }}
@@ -290,7 +290,7 @@ const RaceEntryUI = () => {
 
       {/* Bottom gradient bar */}
       <motion.div
-        className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-400"
+        className="absolute bottom-0 left-0 right-0 h-2 bg-linear-to-br from-cyan-400 via-purple-400 to-cyan-400"
         animate={{
           backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
         }}

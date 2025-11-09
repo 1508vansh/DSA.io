@@ -148,7 +148,7 @@ export default function SearchingVisualizer(){
                    <div><button onClick={()=>setAlgo(1)} className="bg-green-500 text-white px-4 py-2 rounded">Binary Search</button></div>
                 </div>
             </div>
-            <div className="w-[100%] flex flex-col mt-4 items-center">
+            <div className="w-full flex flex-col mt-4 items-center">
             <div className="w-[80%] flex justify-center mb-4">
                     <input
                         id="inputNumber"

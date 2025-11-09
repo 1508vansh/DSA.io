@@ -154,7 +154,7 @@ const GraphVisualizer = () => {
       <motion.div
         className={`absolute w-12 h-12 rounded-full flex items-center justify-center cursor-move
           ${darkMode ? 'bg-blue-500 text-white' : 'bg-blue-300 text-gray-800'}
-          ${traversalPath.includes(node.id) ? '!bg-gradient-to-r from-purple-500 to-pink-500' : ''}
+          ${traversalPath.includes(node.id) ? 'bg-linear-to-br from-purple-500 to-pink-500' : ''}
           ${selectedNodes.includes(node.id) ? 'ring-4 ring-green-400' : ''}`}
         style={{ left: node.x, top: node.y }}
         initial={{ scale: 0 }}

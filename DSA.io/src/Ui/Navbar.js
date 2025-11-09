@@ -19,11 +19,18 @@ function Navbar(){
         <div className='flex justify-between items-center gap-5'>
         <button
       onClick={() => dispatch(toggleMode())}
-      className={`px-2 py-2 rounded-2xl border text-xs sm:text-xl font-light ${
+      className={`px-2 py-2 rounded-2xl border transition duration-300 text-xs sm:text-xl font-light ${
         isDark ? 'bg-black text-white' : 'bg-white text-black'
       }`}
     >
-      {isDark ? `☀️ Light Mode` : `🌙 Dark Mode`}
+      {isDark ? 
+      <span>
+        ☀️
+      </span>
+      :
+      <span>
+        🌙
+        </span>}
     </button>
         </div>
        </Link>

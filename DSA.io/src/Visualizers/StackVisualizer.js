@@ -68,7 +68,7 @@ export default function StackVisualizer(){
             <>
         <div className={`p-5 rounded-lg sm:w-[40%] w-[80%] shadow-lg mx-auto text-center justify-center ${bgColor}`}>
                 <h1 className={`${textColor} text-3xl font-bold mb-4`}>Stack Visualizer</h1>
-            <div className="w-[100%] flex flex-col mt-4 items-center">
+            <div className="w-full flex flex-col mt-4 items-center">
             <div className="w-[80%] flex justify-center mb-4">
                     <input
                         id="inputNumber"
