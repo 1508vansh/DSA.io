@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import ReverseStack from '../components/ReverseStack';
+import ReverseStack from '../Components/ReverseStack';
 export default function StackVisualizer(){
     let isDark = useSelector((state)=>state.isDark.isDark);
     const bgColor = isDark ? 'bg-gray-800' : 'bg-white';
